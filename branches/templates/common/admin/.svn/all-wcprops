@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin
+END
+._broadcast.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._broadcast.html
+END
+modules-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/modules-list.html
+END
+._paging.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._paging.html
+END
+pages-edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/pages-edit.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/default.html
+END
+._login.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._login.html
+END
+pages-add.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/pages-add.html
+END
+user_manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/user_manage.html
+END
+admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/admin.html
+END
+permission.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/permission.html
+END
+._dashboard_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._dashboard_config.html
+END
+modules-edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/modules-edit.html
+END
+._default.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._default.html
+END
+._exportTo.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._exportTo.html
+END
+login.dummy.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/login.dummy.html
+END
+._pages-add.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._pages-add.html
+END
+._user_manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._user_manage.html
+END
+._user_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._user_new.html
+END
+._admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._admin.html
+END
+paging.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/paging.html
+END
+dashboard_panel.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/dashboard_panel.html
+END
+edit_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/edit_config.html
+END
+dashboard_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/dashboard_config.html
+END
+._dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._dialog.html
+END
+._login.dummy.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._login.dummy.html
+END
+._config.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._config.html
+END
+._dashboard_panel.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._dashboard_panel.html
+END
+user_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/user_edit.html
+END
+exportTo.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/exportTo.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/message.html
+END
+._pages-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._pages-list.html
+END
+dashboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/dashboard.html
+END
+._edit_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._edit_config.html
+END
+user_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/user_new.html
+END
+._modules-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._modules-list.html
+END
+dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/dialog.html
+END
+._pages-edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._pages-edit.html
+END
+._user_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._user_edit.html
+END
+._message.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._message.html
+END
+broadcast.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/broadcast.html
+END
+._dashboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._dashboard.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/config.html
+END
+._permission.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._permission.html
+END
+._modules-edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/._modules-edit.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/login.html
+END
+pages-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/templates/common/admin/pages-list.html
+END

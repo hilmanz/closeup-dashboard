@@ -1,0 +1,39 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+</script>
+<script language="javascript" type="text/javascript">
+function DoFunc()
+{
+    if (confirm('Are you sure?'))
+    {
+        alert('Okay then.');
+    }
+}
+var w;
+function closeWindow(){ setTimeout("w.close();", 10000);}
+
+function createWindow(){
+//create the popup window.
+
+w=window.open("","",'width=200,height=100');
+
+// put something into the popup window
+try{w.document.write('<html><head></head><body><p>the w window</p></body> <html>')}catch(err){
+//handle error here
+}
+closeWindow(DoFunc);
+
+//closes the createWindow() function
+}
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

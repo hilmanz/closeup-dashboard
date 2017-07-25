@@ -1,0 +1,30 @@
+<div class="half">
+	<div id="contentLeft" class="fromLeft">
+		<a class="logo fadein" href="index.php">&nbsp;</a>
+		<div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+		<div class="entry">
+		</div><!-- end #entry -->
+	</div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+	<div id="contentRight" class="fromLeft delay">
+		<div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+		{include file="closeup/menu.html"}
+		<div class="entry">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td>
+					<h1>rss feed of blogs and website  about your brand</h1>
+					<div class="tall">
+					<ol>
+						{section name=i loop=$top10RSS}
+						<li><a id="{$idRss[i]}" href="{$top10RSS[i].posturl}">{$top10RSS[i].posttitle}</a></li>
+						{/section}
+					</ol>
+					</div>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+	</div><!-- end #contentRight -->
+</div><!-- end .half -->

@@ -1,0 +1,235 @@
+<div class="half">
+	<div id="contentLeft" class="fromLeft">
+		<a class="logo fadein" href="index.php">&nbsp;</a>
+		<div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry" style="width:80%; left:8%;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <div id="listBlog">
+                        <span class="clearBlock"><a class="rssweb" style="float: none;margin: 0 auto;"><img src="images/rssweb.png" /></a></span>
+                        <span><a id="Mash" href="#" class="mashable flag"><img src="images/mashable.png" /></a></span>
+                        <span><a id="Tech" href="#" class="techcrunch flag"><img src="images/techcrunch.png" /></a></span>
+                        <span><a id="Bell" href="#" class="bellasugar flag"><img src="images/bellasugar.png" /></a></span>
+                        <span><a id="Scou" href="#" class="culturevulture flag"><img src="images/culturevulture.png" /></a></span>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+	</div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+	<div id="contentRight" class="fromLeft delay">
+		<div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+		{include file="closeup/menu.html"}
+		<div class="entry">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td>
+					<h1>RSS News and Blog Articles</h1>
+					<div id="scrollBlog" class="tall twit_container" style="height: 350px;">
+						<h2 class="{$top10RSS[0].blog|substr:0:4}" style="overflow:hidden;">{$top10RSS[0].blog}</h2>
+						<div class="tall twit_container">
+							<ol class="twit_update">
+								{section name=i loop=$top10RSS}
+								<li>
+									<span class="blogPublishDate">{$top10RSS[i].tgl}</span>
+									<a href="#{$idRss[i]}" class="popup2" no="{$top10RSS[i].posturl}">{$top10RSS[i].posttitle}</a>
+								</li>
+								{/section}
+							</ol>
+						</div>
+					</div>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+	</div><!-- end #contentRight -->
+</div><!-- end .half -->
+
+<script type="text/javascript">
+	var interval;
+	var hideTwit;
+	var firstData = "{$top10RSS[0].blog}";
+	var blogURL = {$blogURL};
+	var blogName = {$blogName};
+	var nameLength = blogName.length - 1; 
+	var indexURL = 0;
+	var index = 1;
+	var blogN;
+	var data;
+	var blogInterval;
+{literal}		
+	$(document).ready(function(){
+		$(".flag").each(function(){
+			$(this).removeClass("current");
+		})
+		$("#"+firstData.substring(0,4)+"").addClass("current");
+		//if (indexURL == 0){
+		//	$("#iframe").attr('src',blogURL[indexURL]);
+		//	$(".popupContainer2").delay(5000).fadeIn();
+		//}
+		//blogInterval = setInterval(rotateFB, 60000);
+
+		//function rotateFB(){
+		//	indexURL++;
+		//	if (indexURL == blogURL.length){
+		//		clearInterval(blogInterval);
+		//	}else{
+		//		$(".popupContainer2").fadeOut();
+		//		$("#iframe").attr('src',blogURL[indexURL]);
+		//		$(".popupContainer2").delay(5000).fadeIn();
+		//	}
+		//}
+	
+		$("a.popup2").live("click", function(){
+			var targetID = $(this).attr('href');
+			var url = $(this).attr('no');
+			$(".popupContainer2").fadeIn();
+			$("#iframe").attr('src',url);
+		});
+		$("a.closePopup").click(function(){
+			$(".popupContainer2").fadeOut();
+		});
+	
+		$("#listBlog a.flag").click(function(){
+			
+			clearInterval(blogInterval);
+			clearInterval(interval);
+			
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			});
+			$(this).addClass("current");
+			
+			for(var x in blogName){
+				if ($(this).attr('id') == blogName[x].substring(0,4)){
+					index = x;
+					break;
+				}else{
+					index = null;
+				}
+			}
+			
+			var url = "index.php?page=blog&act=blog";
+			
+			$.ajax({
+				type:'POST',
+				data : {blog: blogName[index]},
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#scrollBlog").hide();
+				},
+				success: function(response) {
+					var html = blogTemplate(blogName[index], response);
+					
+					$("#scrollBlog").html(html);
+					$("#scrollBlog").fadeIn();
+					
+				}
+			});
+			
+			interval = setInterval(blogLoop, 5000);
+			blogInterval = setInterval(blogRotation, 15000);
+		});
+	
+		interval = setInterval(blogLoop, 5000);
+		blogInterval = setInterval(blogRotation, 15000);
+		
+		function blogRotation(){
+			clearInterval(interval);
+			$("ol").css({top: '0'});
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$("#"+blogName[index].substring(0,4)+"").addClass("current");
+			var url = "index.php?page=blog&act=blog";
+			$.ajax({
+				type:'POST',
+				data : {blog: blogName[index]},
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#scrollBlog").hide();
+				},
+				success: function(response) {
+					var html = blogTemplate(blogName[index], response);
+					
+					$("#scrollBlog").html(html);
+					$("#scrollBlog").fadeIn();
+					
+					interval = setInterval(blogLoop, 5000);
+				}
+			});
+		};
+		
+		function blogLoop(){
+			var totalShowTwit = parseInt($("li").length);
+			var lastTwit = totalShowTwit;
+			var topTwit = totalShowTwit - 4;
+
+			if(totalShowTwit >= 5){
+				hideTwit = totalShowTwit - 5;
+			}
+			var twit_update = "index.php?page=blog&act=loop&blogLoop="+lastTwit+"";
+			
+			$.ajax({
+			type:'POST',
+			url: twit_update,
+			dataType: 'json',
+			beforeSend: function(){
+				
+			},
+			
+			success: function(response) {
+					if (response == false && totalShowTwit < 5){
+						//no data available
+					}else if (response == false && totalShowTwit >= 5){
+						
+					}else{
+						if (hideTwit >= 0){
+							$("ol").prepend('<li style="display: none;"><span class="blogPublishDate">'+response.tgl+'</span><a href="#id'+lastTwit+'"  no="'+response.posturl+'" class="popup2">'+response.posttitle+'</a></li>');
+							$('li:eq(0)').slideDown('slow');
+							$('li:eq(5)').fadeOut('slow');
+						}
+					}
+				}
+			});
+		}
+		
+		function blogTemplate(blogN, data){
+			var str="";
+			if (data !== null){
+				str+='<h2 class="'+blogN.substring(0,4)+'" style="overflow:hidden;">'+blogN+'</h2>';
+			}else{
+				str+='<h2 class="nodata"></h2>';
+			}
+			str+='<div class="tall twit_container">';
+			str+='<ol class="twit_update">';
+			if (data !== null){
+				for(var x in data){
+					str+='<li>';
+					str+='<span class="blogPublishDate">'+data[x].tgl+'</span>';
+					str+='<a href="#id'+index+'" class="popup2" no="'+data[x].posturl+'">'+data[x].posttitle+'</a>';
+					str+='</li>';
+				}
+			}else{
+					str+='<span>Not Avalable</span>';
+			}
+			
+			if (index == nameLength){
+				index = 0
+			}else{
+				index++;
+			}
+			
+			str+='</ol>';
+			str+='</div>';
+			return str;
+		}
+		
+	});
+</script>
+{/literal}

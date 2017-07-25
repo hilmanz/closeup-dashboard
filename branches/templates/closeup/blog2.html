@@ -1,0 +1,53 @@
+<div class="half">
+	<div id="contentLeft" class="fromLeft">
+		<a class="logo fadein" href="index.php">&nbsp;</a>
+		<div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="imgHolder" style="z-index:2;"><img src="images/rss.png"/></div>
+        {*}
+		<div class="entry">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td>
+				  <p><a href="{$top10RSS[0].posturl}" target="_blank">{$top10RSS[0].posturl}</a><br>
+				{$top10RSS[0].posttitle}</p>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+        {/*}
+	</div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+	<div id="contentRight" class="fromLeft delay">
+		<div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+		{include file="closeup/menu.html"}
+		<div class="entry">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td>
+					<h1>rss feed of blogs and website  about your brand</h1>
+					<div class="tall">
+					<ol>
+						{section name=i loop=$top10RSS}
+						<li><a href="#{$top10RSS[i].posturl}" class="popup">{$top10RSS[i].posttitle}</a></li>
+						{/section}
+					</ol>
+					</div>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+	</div><!-- end #contentRight -->
+</div><!-- end .half -->
+
+
+{section name=i loop=$top10RSS}
+    <div id="{$top10RSS[i].posturl}" class="popupContainer">
+        <div id="popupContent">
+            <a class="closePopup" href="#">&nbsp;</a>
+            <div class="poupContent">
+              <iframe src="http://www.google.co.id/" width="100%" height="500"></iframe> 
+            </div><!-- end .poupContent -->
+        </div><!-- end #poupContent -->
+    </div><!-- end .popupContainer -->
+{/section}

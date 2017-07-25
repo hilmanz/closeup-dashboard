@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry
+END
+._SpryPagedView.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryPagedView.js
+END
+._SpryDataSetShell.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryDataSetShell.js
+END
+._SpryValidationPassword.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationPassword.js
+END
+SpryValidationSelect.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationSelect.js
+END
+SpryUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryUtils.js
+END
+SpryDOMUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryDOMUtils.js
+END
+SpryAccordion.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryAccordion.js
+END
+._SpryRating.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryRating.js
+END
+._SpryValidationTextarea.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationTextarea.js
+END
+xpath.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/xpath.js
+END
+SpryImageLoader.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryImageLoader.js
+END
+SpryData.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryData.js
+END
+SpryValidationRadio.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationRadio.js
+END
+SpryAutoSuggest.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryAutoSuggest.js
+END
+SpryValidationPassword.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationPassword.js
+END
+SpryRating.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryRating.js
+END
+SpryHTMLPanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryHTMLPanel.js
+END
+._SpryImageLoader.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryImageLoader.js
+END
+._SpryNestedXMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryNestedXMLDataSet.js
+END
+._SpryValidationRadio.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationRadio.js
+END
+._SpryAutoSuggest.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryAutoSuggest.js
+END
+SpryValidationTextarea.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationTextarea.js
+END
+SpryMenuBar.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryMenuBar.js
+END
+SprySlidingPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SprySlidingPanels.js
+END
+._SpryNotifier.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryNotifier.js
+END
+._SpryNestedJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryNestedJSONDataSet.js
+END
+._SpryTabbedPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryTabbedPanels.js
+END
+._SpryDebug.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryDebug.js
+END
+._SpryMenuBar.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryMenuBar.js
+END
+._SpryDataExtensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryDataExtensions.js
+END
+._SpryValidationSelect.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationSelect.js
+END
+SpryValidationConfirm.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationConfirm.js
+END
+SpryCollapsiblePanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryCollapsiblePanel.js
+END
+SpryHTMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryHTMLDataSet.js
+END
+SpryPagedView.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryPagedView.js
+END
+._SpryDOMUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryDOMUtils.js
+END
+SpryJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryJSONDataSet.js
+END
+SpryEffects.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryEffects.js
+END
+SpryURLUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryURLUtils.js
+END
+._SpryData.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryData.js
+END
+._SpryHTMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryHTMLDataSet.js
+END
+SpryDataExtensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryDataExtensions.js
+END
+._SpryJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryJSONDataSet.js
+END
+._SpryEffects.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryEffects.js
+END
+SpryXML.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryXML.js
+END
+SpryDataSetShell.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryDataSetShell.js
+END
+._SpryXML.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryXML.js
+END
+._SpryUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryUtils.js
+END
+._SpryCSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryCSVDataSet.js
+END
+._SpryAccordion.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryAccordion.js
+END
+._SpryValidationCheckbox.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationCheckbox.js
+END
+SpryNestedJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryNestedJSONDataSet.js
+END
+._xpath.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._xpath.js
+END
+SpryDebug.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryDebug.js
+END
+._SpryCollapsiblePanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryCollapsiblePanel.js
+END
+SpryTooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryTooltip.js
+END
+._SpryTSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryTSVDataSet.js
+END
+._SpryURLUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryURLUtils.js
+END
+SpryValidationCheckbox.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationCheckbox.js
+END
+SpryCSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryCSVDataSet.js
+END
+._SpryHTMLPanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryHTMLPanel.js
+END
+SpryValidationTextField.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryValidationTextField.js
+END
+._SpryTooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryTooltip.js
+END
+SpryNestedXMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryNestedXMLDataSet.js
+END
+._SprySlidingPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SprySlidingPanels.js
+END
+SpryNotifier.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryNotifier.js
+END
+._SpryValidationTextField.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationTextField.js
+END
+SpryTSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryTSVDataSet.js
+END
+SpryTabbedPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/SpryTabbedPanels.js
+END
+._SpryValidationConfirm.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/admin/jscripts/spry/._SpryValidationConfirm.js
+END

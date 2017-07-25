@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader
+END
+IReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/IReadFilter.php
+END
+CSV.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/CSV.php
+END
+Serialized.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/Serialized.php
+END
+._SYLK.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._SYLK.php
+END
+OOCalc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/OOCalc.php
+END
+._Excel5.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._Excel5.php
+END
+._Excel2003XML.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._Excel2003XML.php
+END
+._DefaultReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._DefaultReadFilter.php
+END
+._IReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._IReadFilter.php
+END
+._Serialized.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._Serialized.php
+END
+._CSV.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._CSV.php
+END
+Excel2007.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/Excel2007.php
+END
+IReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/IReader.php
+END
+._OOCalc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._OOCalc.php
+END
+SYLK.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/SYLK.php
+END
+Excel5.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/Excel5.php
+END
+Excel2003XML.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/Excel2003XML.php
+END
+DefaultReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/DefaultReadFilter.php
+END
+._Excel2007.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._Excel2007.php
+END
+._IReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Utility/PHPExcel/Reader/._IReader.php
+END

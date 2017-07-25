@@ -1,0 +1,309 @@
+{literal}
+<script language="javascript" type="text/javascript">
+<!--
+// popup facebook start
+var newwindow;
+function closeWindow(){ setTimeout("newwindow.close();", 90000);}
+
+function popitup(url) {
+	window.focus();
+	newwindow=window.open(url,'name','height=1024,width=960');
+	if (window.focus) {newwindow.focus()}
+	closeWindow();
+	return false;
+}
+$("a.tesppop").live("click", function(){
+	url = ""+$(this).attr('href')+"";
+	popitup(url.substring(1));
+});
+
+// -->
+</script>
+{/literal}
+<div class="half homePage">
+	<div id="contentLeft" class="fromLeft">
+		<a class="logo fadein" href="index.php">&nbsp;</a>
+		<div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+		<div class="entry" style="left: 14%;">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td valign="top">
+                    <h1 id="judulVid" style="text-align:center; width:100%;">{$top10Video[0].VideoTitle|truncate:40}</h1>
+					<div id="player" style="position: relative; width: 110%;">
+					</div>
+                    <h2 class="totalView" style="text-align:center;">{$top10Video[0].Views|number_format} views</h2>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+	</div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+	<div id="contentRight" class="fromLeft delay">
+		<div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+		{include file="closeup/menu.html"}
+		<div class="entry">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td valign="top">
+					<h1 style="text-align:left;">What's trending on twitter</h1>
+                    <div id="twitCountry" style="height:275px;">
+						<h2 class="{$top10Twitter[0].location}" style="margin-bottom:24px;">{$top10Twitter[0].location}</h2>
+						<div class="tall twit_container">
+						<ol class="twit_update">
+							{section name=i loop=$top10Twitter}
+							<li><a href="#{$top10Twitter[i].url}" class="tesppop">{$top10Twitter[i].name}</a></li>
+							{/section}
+						</ol>
+						</div>
+					</div>
+				</td>
+			  </tr>
+			</table>
+		</div><!-- end #entry -->
+	</div><!-- end #contentRight -->
+</div><!-- end .half -->
+{*}
+<div id="newsTicker">
+	<div class="wrapper">
+	{section name=i loop=$videoList}
+		<ul class="newsTicker"> 	
+			{section name=j loop=$videoList[i]}
+            <li>
+                <a class="thumbnail" href="#" ><img src="{$videoList[i][j].thumbnail_url}" /></a>
+                <div class="entryNews">
+                	<h3><a href="javascript:void(0)" class="newsTickerLink"  onclick="directClick({$videoList[i][j].Qrank}, '{$videoList[i][j].VideoTitle|escape:'html'}', '{$videoList[i][j].Views}' ,'{$videoList[i][j].VideoURL}');">{$videoList[i][j].VideoTitle}</a></h3>
+                </div>
+            </li>	
+			{/section}
+        </ul><!-- end .newsTicker -->
+	{/section}
+    </div><!-- end .wrapper -->
+</div><!-- end #newsTicker -->
+{/*}
+<script type="text/javascript">
+	var url = {$arrVideoID};
+	var titleVid = {$arrVideoTitle};
+	var viewsVid = {$arrVideoViews};
+	var i = 0;
+	var j;
+	var checkVideo = 0;
+	var timeout;
+{literal}
+	  setInterval(onPlayerStateChange, 30000);
+	  var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubePlayerAPIReady() {
+		$("a#link1").css('color','#ffff00').css('text-decoration','underline');
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: youtube_parser(url[0]),
+		  playerVars: { 'autoplay': 1, 'controls': 1 },
+          events: {
+			'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+		
+      }
+	  
+		function addCommas(str) {
+			var amount = new String(str);
+			amount = amount.split("").reverse();
+
+			var output = "";
+			for ( var i = 0; i <= amount.length-1; i++ ){
+				output = amount[i] + output;
+				if ((i+1) % 3 == 0 && (amount.length-1) !== i)output = ',' + output;
+			}
+			return output;
+		}
+		function thirtySeconds(){
+			if ( i == 0){
+					i = 1;
+					j=i+1;
+				}
+				if(i == titleVid.length){
+					i = 0;
+					j=i+1;
+				}
+				var totViews = addCommas(viewsVid[i]);
+				$("#judulVid").html(titleVid[i]);
+				$(".totalView").html(totViews+" views");
+				vidID = youtube_parser(url[i]);
+				player.loadVideoById(vidID, '0');
+				i++;
+				j++;
+		}
+      function onPlayerStateChange(event) {
+		 if(event.data == YT.PlayerState.ENDED){
+				if ( i == 0){
+					i = 1;
+					j=i+1;
+				}
+				if(i == titleVid.length){
+					i = 0;
+					j=i+1;
+				}
+				var totViews = addCommas(viewsVid[i]);
+				$("#judulVid").html(titleVid[i]);
+				$(".totalView").html(totViews+" views");
+				vidID = youtube_parser(url[i]);
+				if(vidID == false){
+					clearTimeout(timeout);
+					timeout = setTimeout(thirtySeconds,1000);
+				}
+				player.loadVideoById(vidID, '0');
+				i++;
+				j++;
+				
+		}else if(event.data == YT.PlayerState.PLAYING){
+			clearTimeout(timeout);
+			timeout = setTimeout(thirtySeconds,30000);
+		}
+      }
+	  function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+	
+	function directClick(id,title,views,url){
+		i = id-1;
+		j = id;
+		var totViews = addCommas(views);
+		$("#judulVid").html(title);
+		$(".totalView").html(totViews+" views");
+	
+		vidID = youtube_parser(url);
+		if(vidID == false){
+			clearTimeout(timeout);
+			timeout = setTimeout(thirtySeconds,1000);
+		}
+		player.loadVideoById(vidID, '0');
+		i++;
+		j++;
+		}
+	
+	//////////////////////////////////////
+	function youtube_parser(url){
+		var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+		var match = url.match(regExp);
+		if (match&&match[7].length==11){
+			return match[7];
+		}else{
+			return false;
+		}
+	}
+
+{/literal}
+</script>
+
+<script type="text/javascript">
+	var country = {$countries};
+	var countryLength = country.length - 1;
+{literal}
+	$('ul.newsTicker').innerfade({
+		speed: 1000,
+		timeout: 5000,
+		type: 'sequence',
+		containerheight: '220px'
+	});
+	$(document).ready(function(){
+		
+		var data;
+		var index = 1;
+		var interval = setInterval(twitLoop, 5000);
+		var mainInterval = setInterval(twitRotaion, 15000);
+		
+		function twitRotaion(){
+			clearInterval(interval);
+			$("ol").css({top: '0'});
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$("#"+country[index]+"").addClass("current");
+			var url = "index.php?page=twitter&act=country&country="+country[index]+"";
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#twitCountry").hide();
+				},
+				success: function(response) {
+					var html = trending(country[index], response);
+					$("#twitCountry").html(html);
+					$("#twitCountry").fadeIn();
+					
+					interval = setInterval(twitLoop, 5000);
+				}
+			});
+		};
+		
+		
+		function twitLoop(){
+			var totalShowTwit = parseInt($(".twit_update li").length);
+			var lastTwit = totalShowTwit + 1;
+			
+			if(totalShowTwit >= 7){
+				hideTwit = totalShowTwit - 7;
+			}
+			var twit_update = "index.php?page=twitter&act=loop&twit="+lastTwit+"";
+			
+			$.ajax({
+			type:'POST',
+			url: twit_update,
+			dataType: 'json',
+			beforeSend: function(){
+				
+			},
+			success: function(response) {
+					if (response == false && totalShowTwit < 7){
+						//no data available
+					}else if (response == false && totalShowTwit >= 7){
+						
+					}else{
+						if (hideTwit >= 0){
+							$("ol").prepend('<li style="display: none;"><a href="#'+response.url+'" class="tesppop" >'+response.name+'</a></li>');
+							$('li:eq(0)').slideDown('slow');
+							$('li:eq(10)').fadeOut('slow');
+						}
+					}
+				}
+			});
+		}
+		
+		function trending(country, data){
+			var str='<h2 class="'+country+'" style="margin-bottom:24px;">'+country+'</h2>';
+			str+='<div class="tall twit_container">';
+			str+='<ol class="twit_update">';
+			if (data !== null){
+				for(var x in data){
+					str+='<li><a href="#'+data[x].url+'" class="tesppop">'+data[x].name+'</a></li>';
+				}
+			}else{
+					str+='<span>Not Avalable</span>';
+			}
+			str+='</ol>';
+			str+='</div>';
+			if (index == countryLength){
+				index = 0
+			}else{
+				index++;
+			}
+			return str;
+		}
+		
+		
+		
+	
+		
+	});
+</script>
+{/literal}

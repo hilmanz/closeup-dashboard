@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	{include file="closeup/meta.html"}
+</head>
+<body>
+	<div id="pagewidth">
+		<div id="content">
+			<section>
+				<div class="center">
+					<div class="columns">
+                       {$mainContent}
+                        <div id="popupAddict" class="popupContainer">
+                            <div id="popupContent">
+                                <a class="closePopup" href="#">&nbsp;</a>
+                                <div class="poupContent">
+                                  <iframe src="http://addictomatic.com/" width="100%" height="500"></iframe> 
+                                </div><!-- end .poupContent -->
+                            </div><!-- end #poupContent -->
+                        </div><!-- end .popupContainer -->
+                        <div id="popupTwitfeel" class="popupContainer">
+                            <div id="popupContent">
+                                <a class="closePopup" href="#">&nbsp;</a>
+                                <div class="poupContent">
+                                  <iframe src="http://www.tweetfeel.com/" width="100%" height="500"></iframe> 
+                                </div><!-- end .poupContent -->
+                            </div><!-- end #poupContent -->
+                        </div><!-- end .popupContainer -->
+						<div id="water"><img src="images/water.png"/></div>
+							<div class="popupContainer2">
+							<div id="popupContent">
+								<a class="closePopup" href="#">&nbsp;</a>
+								<div class="poupContent">
+								  <iframe id="iframe" src="" width="100%" height="500"></iframe> 
+								</div><!-- end .poupContent -->
+							</div><!-- end #poupContent -->
+						</div><!-- end .popupContainer -->
+                        <div id="bgPopup"></div>
+					</div><!-- end .columns -->
+				</div><!-- end .center -->
+			</section>
+		</div><!-- end #content -->
+	</div><!-- end #pagewidth -->
+<<<<<<< .mine
+    <div id="water"><img src="images/water.png"/></div>
+=======
+	
+
+
+	<script type="text/javascript">
+	{literal}
+		$("a.popup2").click(function(){
+			var targetID = $(this).attr('href');
+			var url = $(this).attr('no');
+			$(".popupContainer2").fadeIn();
+			$("#iframe").attr('src',url)
+			$("#bgPopup").fadeIn();
+		});
+		$("a.closePopup").click(function(){
+			$(".popupContainer2").fadeOut();
+			$("#bgPopup").fadeOut();
+		});
+	{/literal}
+</script>
+>>>>>>> .r11
+</body>
+</html>

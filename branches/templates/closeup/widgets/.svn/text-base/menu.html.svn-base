@@ -1,0 +1,9 @@
+<div id="navigation" class="fadein delay2s">
+	<span class="{$page1}"><a href="#" class="home">&nbsp;</a></span>
+	<span class="{$page2}"><a href="#" class="youtube">&nbsp;</a></span>
+	<span class="{$page3}"><a href="#" class="facebook">&nbsp;</a></span>
+	<span class="{$page4}"><a href="#" class="twitfeel popup">&nbsp;</a></span>
+	<span class="{$page5}"><a href="#" class="twitter">&nbsp;</a></span>
+	<span class="{$page6}"><a href="#" class="addict popup">&nbsp;</a></span>
+	<span class="{$page7}"><a href="#" class="rss">&nbsp;</a></span>
+</div>

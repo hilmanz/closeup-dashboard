@@ -1,0 +1,77 @@
+<p><strong>PAGE CREATE NEW</strong></p>
+<p>
+	<a href="?s=pages">Back</a>
+</p>
+{if $err}
+<p>
+	Error Create Page
+	<ul>
+	{section name=i loop=$err}
+		<li>{$err[i]}</li>
+	{/section}
+	</ul>
+</p>
+{/if}
+<form method="POST" action="?s=pages&act=add">
+<table class="list" width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>Name</td><td><input type="text" name="name" value="{$name}" /></td>
+	</tr>
+	<tr>
+		<td>Request</td><td><input type="text" name="request" value="{$request}" /></td>
+	</tr>
+	<tr>
+		<td>Template</td><td><input type="text" name="template" value="{$template}" />&nbsp;.HTML</td>
+	</tr>
+	<tr>
+		<td>Content</td>
+		<td>
+			<select name="content">
+				<option value="no" {if $content eq 'no'}selected="selected"{/if}>No</option>
+				<option value="yes" {if $content eq 'yes'}selected="selected"{/if}>Yes</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Content Title</td><td><input type="text" name="content_title" value="{$content_title}" /></td>
+	</tr>
+	<tr>
+		<td>Content Text</td><td><textarea name="content_text" cols="70" rows="15">{$content_text}</textarea></td>
+	</tr>
+	<tr>
+		<td>Status</td>
+		<td>
+			<select name="status">
+				<option value="deactive" {if $status eq 'deactive'}selected="selected"{/if}>Deactive</option>
+				<option value="active" {if $status eq 'active'}selected="selected"{/if}>Active</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Login</td>
+		<td>
+			<select name="login">
+				<option value="yes" {if $login eq 'yes'}selected="selected"{/if}>Yes</option>
+				<option value="no" {if $login eq 'no'}selected="selected"{/if}>No</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Widgets</td>
+		<td>
+			{section name=i loop=$widgets}
+			<span>
+				<input type="checkbox" name="widgets[]" value="{$widgets[i].name}" />&nbsp;{$widgets[i].name}
+			</span>
+			&nbsp;
+			{/section}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="hidden" value="1" name="add" />
+			<input type="submit" value="Create New" />
+		</td>
+	</tr>
+</table>
+</form>

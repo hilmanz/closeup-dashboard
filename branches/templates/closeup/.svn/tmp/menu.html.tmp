@@ -1,0 +1,126 @@
+<<<<<<< .mine
+<div id="navigation" class="fadein delay2s">
+	<span id="1" class="{$page1}"><a href="index.php" class="home">&nbsp;</a></span>
+	<span id="2" class="{$page2}"><a href="index.php?page=youtube" class="youtube">&nbsp;</a></span>
+	<span id="3" class="{$page3}"><a href="index.php?page=facebook" class="facebook">&nbsp;</a></span>
+	<span id="4" class="{$page4}"><a href="#popupTwitfeel" class="twitfeel popup">&nbsp;</a></span>
+	<span id="5" class="{$page5}"><a href="index.php?page=twitter" class="twitter">&nbsp;</a></span>
+	<span id="6" class="{$page6}"><a href="#popupAddict" class="addict popup">&nbsp;</a></span>
+	<span id="7" class="{$page7}"><a href="index.php?page=blog" class="rss">&nbsp;</a></span>
+	<span id="8" class=""><a href="logout.php" class="logout">&nbsp;</a></span>
+</div>
+<script>
+{literal}
+$(document).ready(function(){
+	var topic = ['closeup', 'technology', 'Music', 'FMCG', 'Sports', 'toothpaste']; 
+	var addictIndex = 0;
+	function rotationPage(){
+		var nextIdPage = $("#navigation span.current").attr("id");
+		
+		
+		if ($("#navigation span.current").next().length == 0){
+			nextIdPage = 0;
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}else if(nextIdPage == 3 || nextIdPage == 5){
+			if (nextIdPage == 5){
+				setInterval(addictRotation, 30000);
+			}else{
+				//var iframe = document.getElementById("#twitFeelFrame");
+				//iframe.src = iframe.src;
+				//$("#popupTwitfeel iframe").attr('src', "http://www.tweetfeel.com/toothpaste#toothpaste");
+				//var val = 'http://www.tweetfeel.com/toothpaste#toothpaste';
+				//$( '#twitFeelFrame' ).attr( 'src', function ( i, val ) { return val; });
+			}
+			var popup = parseInt(nextIdPage)+1;
+			$("span#"+nextIdPage+"").removeClass("current");
+			$("span#"+popup+"").addClass("current");
+			var targetID = $("span#"+popup+" a").attr('href');
+			
+			$(targetID).fadeIn();
+			$("#bgPopup").fadeIn();
+			
+		}else{
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}
+		
+	}
+	
+	function addictRotation(){
+		$("#popupAddict iframe").attr('src', "http://addictomatic.com/topic/"+topic[addictIndex]);
+		
+		if(topic.length == (addictIndex+1)){
+			addictIndex = 0;
+		}else{
+			addictIndex++;
+		}
+		
+	}
+	setInterval(rotationPage,300000);
+});
+{/literal}
+=======
+<div id="navigation" class="fadein delay2s">
+	<span id="1" class="{$page1}"><a href="index.php" class="home">&nbsp;</a></span>
+	<span id="2" class="{$page2}"><a href="index.php?page=youtube" class="youtube">&nbsp;</a></span>
+	<span id="3" class="{$page3}"><a href="index.php?page=facebook" class="facebook">&nbsp;</a></span>
+	<span id="4" class="{$page4}"><a href="#popupTwitfeel" class="twitfeel popup">&nbsp;</a></span>
+	<span id="5" class="{$page5}"><a href="index.php?page=twitter" class="twitter">&nbsp;</a></span>
+	<span id="6" class="{$page6}"><a href="#popupAddict" class="addict popup">&nbsp;</a></span>
+	<span id="7" class="{$page7}"><a href="index.php?page=blog" class="rss">&nbsp;</a></span>
+</div>
+<script>
+{literal}
+$(document).ready(function(){
+	var topic = ['closeup', 'technology', 'Music', 'FMCG', 'Sports', 'toothpaste']; 
+	var addictIndex = 0;
+	var rotationTopic;
+	
+	$(".addict").click(function(){
+		clearInterval(rotationTopic);
+		rotationTopic = setInterval(addictRotation, 30000);
+	});
+	function rotationPage(){
+		var nextIdPage = $("#navigation span.current").attr("id");
+		
+		
+		if ($("#navigation span.current").next().length == 0){
+			nextIdPage = 0;
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}else if(nextIdPage == 3 || nextIdPage == 5){
+			if (nextIdPage == 5){
+				clearInterval(rotationTopic);
+				rotationTopic = setInterval(addictRotation, 30000);
+			}
+			var popup = parseInt(nextIdPage)+1;
+			$("span#"+nextIdPage+"").removeClass("current");
+			$("span#"+popup+"").addClass("current");
+			var targetID = $("span#"+popup+" a").attr('href');
+			
+			$(targetID).fadeIn();
+			$("#bgPopup").fadeIn();
+			
+		}else{
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}
+		
+	}
+	
+	function addictRotation(){
+		$("#popupAddict iframe").attr('src', "http://addictomatic.com/topic/"+topic[addictIndex]);
+		
+		if(topic.length == (addictIndex+1)){
+			addictIndex = 0;
+		}else{
+			addictIndex++;
+		}
+		
+	}
+	setInterval(rotationPage,300000);
+});
+{/literal}
+>>>>>>> .r34
+</script>

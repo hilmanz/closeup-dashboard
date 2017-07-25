@@ -1,0 +1,226 @@
+<script language="javascript" type="text/javascript">
+var twURL = {$twURL};
+var indexURL = 0;
+var twitterInterval;
+{literal}
+var newwindow;
+if (indexURL == 0){
+	newwindow=window.open(twURL[indexURL],'name','height=1024,width=960');
+	if (window.focus) {newwindow.focus()}
+	setTimeout("newwindow.close();", 90000);
+}
+twitterInterval = setInterval(rotateFB, 30000);
+
+function rotateFB(){
+	indexURL++;
+	if (indexURL == twURL.length){
+		clearInterval(twitterInterval);
+	}else{
+		newwindow=window.open(twURL[indexURL],'name','height=1024,width=960');
+		if (window.focus) {newwindow.focus()}
+		setTimeout("newwindow.close();", 90000);
+	}
+}
+<!--
+// popup facebook start
+var newwindow;
+//function closeWindow(){ setTimeout("newwindow.close();", 10000);}
+
+function popitup(url) {
+	newwindow=window.open(url,'name','height=1024,width=960');
+	if (window.focus) {newwindow.focus()}
+	//closeWindow();
+	return false;
+}
+$("a.tesppop").live("click", function(){
+	url = ""+$(this).attr('href')+"";
+	popitup(url.substring(1));
+});
+
+// -->
+</script>
+{/literal}
+<div class="half">
+    <div id="contentLeft" class="fromLeft">
+        <a class="logo" href="index.php">&nbsp;</a>
+        <div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>SELECT COUNTRY</h1>
+                    <div id="listCountry">
+                        <span><a id="Indonesia" href="#" class="indonesia flag"><img src="images/indonesia.png" /></a></span>
+                        <span><a id="Malaysia" href="#" class="malaysia flag"><img src="images/malaysia.png" /></a></span>
+                        <span><a id="Singapore" href="#" class="singapore flag"><img src="images/singapore.png" /></a></span>
+                        <span><a id="Thailand" href="#" class="thailand flag"><img src="images/thailand.png" /></a></span>
+                        <span><a id="Philippines" href="#" class="philipine flag"><img src="images/philipine.png" /></a></span>
+                        <span><a id="Vietnam" href="#" class="vietnam flag"><img src="images/vietnam.png" /></a></span>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+    <div id="contentRight" class="fromRight delay">
+        <div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+     	{include file="closeup/menu.html"}
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>What's trending on twitter</h1>
+                    <div id="twitCountry" style="height:275px;">
+						<h2 class="{$top10Twitter[0].location}">{$top10Twitter[0].location}</h2>
+						<div class="tall twit_container">
+						<ol class="twit_update">
+							{section name=i loop=$top10Twitter}
+							<li><a href="#{$top10Twitter[i].url}" class="tesppop">{$top10Twitter[i].name}</a></li>
+							{/section}
+						</ol>
+						</div>
+					</div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentRight -->
+</div><!-- end .half -->
+
+
+{literal}
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+<script type="text/javascript">
+	var countryN = "";
+	var data;
+	var interval;
+	var mainInterval;
+	var country = ['Indonesia','Malaysia','Singapore','Thailand','Philippines','Vietnam','Worldwide'];
+	var data;
+	var index = 0;
+	var hideTwit;
+		
+	$(document).ready(function(){
+		$("#listCountry a").click(function(){
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$(this).addClass("current");
+			countryN = $(this).attr('id');
+			var url = "index.php?page=twitter&act=country&country="+countryN+"";
+			
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#twitCountry").fadeOut();
+				},
+				success: function(response) {
+					var html = trending(countryN, response);
+					$("#twitCountry").html(html);
+					$("#twitCountry").fadeIn();
+					
+				}
+			});
+			clearInterval(mainInterval);
+			clearInterval(interval);
+			for(var x in country){
+				if (country[x] == countryN){
+					index = x;
+				}
+			}
+			interval = setInterval(twitLoop, 5000);
+			mainInterval = setInterval(twitRotaion, 15000);
+		});
+		
+		
+		
+		interval = setInterval(twitLoop, 5000);
+		mainInterval = setInterval(twitRotaion, 15000);
+		
+		function twitRotaion(){
+			clearInterval(interval);
+			$("ol").css({top: '0'});
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$("#"+country[index]+"").addClass("current");
+			var url = "index.php?page=twitter&act=country&country="+country[index]+"";
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#twitCountry").hide();
+				},
+				success: function(response) {
+					var html = trending(country[index], response);
+					$("#twitCountry").html(html);
+					$("#twitCountry").fadeIn();
+					
+					interval = setInterval(twitLoop, 5000);
+				}
+			});
+		};
+		
+		
+		function twitLoop(){
+			var totalShowTwit = parseInt($("li").length);
+			var lastTwit = totalShowTwit + 1;
+			console.log(totalShowTwit);
+			if(totalShowTwit >= 10){
+				hideTwit = totalShowTwit - 10;
+			}
+			var twit_update = "index.php?page=twitter&act=loop&twit="+lastTwit+"";
+			
+			$.ajax({
+			type:'POST',
+			url: twit_update,
+			dataType: 'json',
+			beforeSend: function(){
+				
+			},
+			success: function(response) {
+					if (response == false && totalShowTwit < 10){
+						//no data available
+					}else if (response == false && totalShowTwit >= 10){
+						
+					}else{
+						if (hideTwit >= 0){
+							$("ol").prepend('<li style="display: none;"><a href="#'+response.url+'" class="tesppop" >'+response.name+'</a></li>');
+							$('li:eq(0)').slideDown('slow');
+							$('li:eq(10)').fadeOut('slow');
+						}
+					}
+				}
+			});
+		}
+		
+		function trending(country, data){
+			var str='<h2 class="'+country+'">'+country+'</h2>';
+			str+='<div class="tall twit_container">';
+			str+='<ol class="twit_update">';
+			if (data !== null){
+				for(var x in data){
+					str+='<li><a href="#'+data[x].url+'" class="tesppop">'+data[x].name+'</a></li>';
+				}
+			}else{
+					str+='<span>Data is Not Avalable</span>';
+			}
+			str+='</ol>';
+			str+='</div>';
+			if (index == '6'){
+				index = 0
+			}else{
+				index++;
+			}
+			return str;
+		}
+		
+	});
+</script>
+{/literal}

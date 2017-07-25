@@ -1,0 +1,31 @@
+<div id="navigation" class="fadein delay2s">
+	<span id="1" class="{$page1}"><a href="index.php" class="home">&nbsp;</a></span>
+	<span id="2" class="{$page2}"><a href="index.php?page=youtube" class="youtube">&nbsp;</a></span>
+	<span id="3" class="{$page3}"><a href="index.php?page=facebook" class="facebook">&nbsp;</a></span>
+	<span id="4" class="{$page4}"><a href="index.php?page=tweetfeel" class="twitfeel">&nbsp;</a></span>
+	<span id="5" class="{$page5}"><a href="index.php?page=twitter" class="twitter">&nbsp;</a></span>
+	<span id="6" class="{$page6}"><a href="index.php?page=addict" class="addict">&nbsp;</a></span>
+	<span id="7" class="{$page7}"><a href="index.php?page=blog" class="rss">&nbsp;</a></span>
+	{*}<span id="8" class=""><a href="logout.php" class="logout">&nbsp;</a></span>{/*}
+</div>
+<script>
+{literal}
+$(document).ready(function(){
+	function rotationPage(){
+		var nextIdPage = $("#navigation span.current").attr("id");
+		
+		
+		if ($("#navigation span.current").next().length == 0){
+			nextIdPage = 0;
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}else{
+			var nextLinkPage = $("#navigation span:eq("+nextIdPage+") a").attr("href");
+			window.location.replace(nextLinkPage);
+		}
+		
+	}
+	setInterval(rotationPage, 300000);
+});
+{/literal}
+</script>

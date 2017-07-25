@@ -1,0 +1,198 @@
+<<<<<<< .mine
+<div class="half">
+    <div id="contentLeft" class="fromLeft">
+        <a class="logo" href="index.html">&nbsp;</a>
+        <div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>SELECT COUNTRY</h1>
+                    <div id="listCountry">
+                        <span><a id="Indonesia" href="#" class="indonesia flag"><img src="images/indonesia.png" /></a></span>
+                        <span><a id="Malaysia" href="#" class="malaysia flag"><img src="images/malaysia.png" /></a></span>
+                        <span><a id="Singapore" href="#" class="singapore flag"><img src="images/singapore.png" /></a></span>
+                        <span><a id="Thailand" href="#" class="thailand flag"><img src="images/thailand.png" /></a></span>
+                        <span><a id="Philippines" href="#" class="philipine flag"><img src="images/philipine.png" /></a></span>
+                        <span><a id="Vietnam" href="#" class="vietnam flag"><img src="images/vietnam.png" /></a></span>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+    <div id="contentRight" class="fromRight delay">
+        <div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+     	{include file="closeup/menu.html"}
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>What's trending on twitter</h1>
+                    <div id="twitCountry" style="height:275px;">
+						<h2>{$top10Twitter[0].location}</h2>
+						<div class="tall">
+						<ol>
+							{section name=i loop=$top10Twitter}
+							<li><a href="{$top10Twitter[i].url}" target="_blank">{$top10Twitter[i].name}</a></li>
+							{/section}
+						</ol>
+						</div>
+					<div id="twitCountry">
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentRight -->
+</div><!-- end .half -->
+{literal}
+<script type="text/javascript">
+	var country = "";
+	var data;
+	$(document).ready(function(){
+		$("#listCountry a").click(function(){
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$(this).addClass("current");
+			country = $(this).attr('id');
+			var url = "index.php?page=twitter&act=country&country="+country+"";
+			
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#twitCountry").fadeOut();
+				},
+				success: function(response) {
+					var html = trending(country, response);
+					$("#twitCountry").html(html);
+					$("#twitCountry").fadeIn();
+					
+				}
+			});
+			
+		});
+		
+		function trending(country, data){
+			var str='<h2>'+country+'</h2>';
+			str+='<div class="tall">';
+			str+='<ol>';
+			if (data !== null){
+				for(var x in data){
+					str+='<li><a href="'+data[x].url+'" target="_blank">'+data[x].name+'</a></li>';
+				}
+			}else{
+					str+='<span>Data is Not Avalable</span>';
+			}
+			str+='</ol>';
+			str+='</div>';
+			
+			return str;
+		}
+		
+	});
+</script>
+=======
+<div class="half">
+    <div id="contentLeft" class="fromLeft">
+        <a class="logo" href="index.html">&nbsp;</a>
+        <div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>SELECT COUNTRY</h1>
+                    <div id="listCountry">
+                        <span><a id="Indonesia" href="#" class="indonesia flag"><img src="images/indonesia.png" /></a></span>
+                        <span><a id="Malaysia" href="#" class="malaysia flag"><img src="images/malaysia.png" /></a></span>
+                        <span><a id="Singapore" href="#" class="singapore flag"><img src="images/singapore.png" /></a></span>
+                        <span><a id="Thailand" href="#" class="thailand flag"><img src="images/thailand.png" /></a></span>
+                        <span><a id="Philippines" href="#" class="philipine flag"><img src="images/philipine.png" /></a></span>
+                        <span><a id="Vietnam" href="#" class="vietnam flag"><img src="images/vietnam.png" /></a></span>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+    <div id="contentRight" class="fromRight delay">
+        <div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+     	{include file="closeup/menu.html"}
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>What's trending on twitter</h1>
+                    <div id="twitCountry" style="height:275px;">
+						<h2>{$top10Twitter[0].location}</h2>
+						<div class="tall">
+						<ol>
+							{section name=i loop=$top10Twitter}
+							<li><a id="{$idTwit[i]}" href="{$top10Twitter[i].url}" target="_blank">{$top10Twitter[i].name}</a></li>
+							{/section}
+						</ol>
+						</div>
+					</div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentRight -->
+</div><!-- end .half -->
+{literal}
+<script type="text/javascript">
+	var country = "";
+	var data;
+	$(document).ready(function(){
+		$("#listCountry a").click(function(){
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$(this).addClass("current");
+			country = $(this).attr('id');
+			var url = "index.php?page=twitter&act=country&country="+country+"";
+			
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#twitCountry").fadeOut();
+				},
+				success: function(response) {
+					var html = trending(country, response);
+					$("#twitCountry").html(html);
+					$("#twitCountry").fadeIn();
+					
+				}
+			});
+			
+		});
+		
+		function trending(country, data){
+			var str='<h2>'+country+'</h2>';
+			str+='<div class="tall">';
+			str+='<ol>';
+			if (data !== null){
+				for(var x in data){
+					str+='<li><a href="'+data[x].url+'" target="_blank">'+data[x].name+'</a></li>';
+				}
+			}else{
+					str+='<span>Data is Not Avalable</span>';
+			}
+			str+='</ol>';
+			str+='</div>';
+			
+			return str;
+		}
+		
+	});
+</script>
+>>>>>>> .r6
+{/literal}

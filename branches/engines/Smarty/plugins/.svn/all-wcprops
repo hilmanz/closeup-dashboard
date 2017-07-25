@@ -1,0 +1,617 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins
+END
+._modifier.strip_tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.strip_tags.php
+END
+modifier.spacify.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.spacify.php
+END
+modifier.count_paragraphs.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.count_paragraphs.php
+END
+modifier.escape.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.escape.php
+END
+._modifier.capitalize.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.capitalize.php
+END
+._modifier.count_characters.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.count_characters.php
+END
+._function.geturl.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.geturl.php
+END
+function.token.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.token.php
+END
+._function.config_load.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.config_load.php
+END
+modifier.debug_print_var.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.debug_print_var.php
+END
+._modifier.count_sentences.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.count_sentences.php
+END
+._outputfilter.trimwhitespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._outputfilter.trimwhitespace.php
+END
+function.eval.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.eval.php
+END
+modifier.nl2br.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.nl2br.php
+END
+._modifier.wordwrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.wordwrap.php
+END
+._modifier.count_words.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.count_words.php
+END
+._function.token.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.token.php
+END
+._modifier.cat.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.cat.php
+END
+._shared.make_timestamp.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._shared.make_timestamp.php
+END
+._function.html_select_time.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_select_time.php
+END
+function.cycle.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.cycle.php
+END
+modifier.count_characters.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.count_characters.php
+END
+._modifier.replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.replace.php
+END
+modifier.lower.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.lower.php
+END
+._function.mailto.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.mailto.php
+END
+._function.popup_init.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.popup_init.php
+END
+._modifier.nl2br.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.nl2br.php
+END
+function.html_radios.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_radios.php
+END
+._function.math.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.math.php
+END
+._function.fb_article.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.fb_article.php
+END
+._modifier.default.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.default.php
+END
+._modifier.truncate.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.truncate.php
+END
+._modifier.date_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.date_format.php
+END
+function.html_table.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_table.php
+END
+._function.cycle.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.cycle.php
+END
+._modifier.lower.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.lower.php
+END
+modifier.wordwrap.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.wordwrap.php
+END
+._block.textformat.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._block.textformat.php
+END
+function.html_select_time.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_select_time.php
+END
+shared.make_timestamp.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/shared.make_timestamp.php
+END
+._modifier.escape.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.escape.php
+END
+function.fetch.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.fetch.php
+END
+function.math.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.math.php
+END
+modifier.indent.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.indent.php
+END
+._function.counter.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.counter.php
+END
+modifier.truncate.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.truncate.php
+END
+shared.escape_special_chars.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/shared.escape_special_chars.php
+END
+function.config_load.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.config_load.php
+END
+modifier.upper.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.upper.php
+END
+._function.fetch.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.fetch.php
+END
+function.html_image.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_image.php
+END
+modifier.count_sentences.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.count_sentences.php
+END
+compiler.assign.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/compiler.assign.php
+END
+modifier.strip.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.strip.php
+END
+._function.html_checkboxes.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_checkboxes.php
+END
+modifier.count_words.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.count_words.php
+END
+modifier.cat.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.cat.php
+END
+._modifier.upper.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.upper.php
+END
+._modifier.spacify.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.spacify.php
+END
+modifier.replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.replace.php
+END
+._modifier.strip.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.strip.php
+END
+modifier.string_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.string_format.php
+END
+._function.call.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.call.php
+END
+._function.html_table.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_table.php
+END
+modifier.strip_tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.strip_tags.php
+END
+._function.html_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_options.php
+END
+modifier.default.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.default.php
+END
+modifier.capitalize.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.capitalize.php
+END
+modifier.date_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.date_format.php
+END
+._modifier.debug_print_var.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.debug_print_var.php
+END
+function.geturl.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.geturl.php
+END
+block.textformat.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/block.textformat.php
+END
+function.popup.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.popup.php
+END
+._modifier.string_format.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.string_format.php
+END
+function.assign_debug_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.assign_debug_info.php
+END
+._modifier.indent.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.indent.php
+END
+function.secureurl.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.secureurl.php
+END
+outputfilter.trimwhitespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/outputfilter.trimwhitespace.php
+END
+function.call.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.call.php
+END
+._function.html_select_date.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_select_date.php
+END
+._shared.escape_special_chars.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._shared.escape_special_chars.php
+END
+modifier.regex_replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/modifier.regex_replace.php
+END
+function.frozbite_call.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.frozbite_call.php
+END
+function.counter.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.counter.php
+END
+function.html_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_options.php
+END
+._function.popup.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.popup.php
+END
+._function.assign_debug_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.assign_debug_info.php
+END
+._function.html_radios.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_radios.php
+END
+._function.html_image.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.html_image.php
+END
+function.mailto.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.mailto.php
+END
+function.debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.debug.php
+END
+._compiler.assign.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._compiler.assign.php
+END
+._function.secureurl.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.secureurl.php
+END
+._modifier.count_paragraphs.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.count_paragraphs.php
+END
+function.popup_init.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.popup_init.php
+END
+function.fb_article.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.fb_article.php
+END
+._modifier.regex_replace.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._modifier.regex_replace.php
+END
+._function.frozbite_call.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.frozbite_call.php
+END
+function.html_select_date.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_select_date.php
+END
+function.html_checkboxes.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/function.html_checkboxes.php
+END
+._function.debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.debug.php
+END
+._function.eval.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/closeup-dashboard/!svn/ver/2/branches/engines/Smarty/plugins/._function.eval.php
+END

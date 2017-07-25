@@ -1,0 +1,280 @@
+/*
+ANIMATION by ACIT JAZZ - 2012
+*/
+
+@-webkit-keyframes resize {
+from { -webkit-transform:  scale(0.10); }
+to { -webkit-transform:  scale(0.791); }
+}
+@-moz-keyframes resize {
+from { -moz-transform: scale(0.1) ; }
+to { -moz-transform:  scale(1); }
+}
+@-o-keyframes resize {
+from { -o-transform:  scale(0.14); }
+to { -o-transform: scale(0.791); }
+}
+
+
+@-webkit-keyframes muter {
+from { -webkit-transform: rotate(180deg) scale(0); }
+to {   -webkit-transform: rotate(0deg) scale(1) ; }
+}
+@-moz-keyframes muter {
+from { -moz-transform: rotate(180deg) scale(0) ;
+	}
+to { -moz-transform: rotate(0deg) scale(1); }
+}
+@-o-keyframes muter {
+from { -o-transform: rotate(180deg) scale(0); }
+to { -o-transform: rotate(0deg) scale(1); }
+}
+
+
+@-moz-keyframes spinPulse {
+	0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spinPulse {
+	0% { -webkit-transform:rotate(360deg); }
+	100% { -webkit-transform:rotate(0deg); }
+}
+@-webkit-keyframes spinoffPulse {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+
+@-webkit-keyframes muter {
+from { -webkit-transform: rotate(-360deg) scale(0); }
+to { -webkit-transform: rotate(0deg) scale(1) ; }
+}
+@-moz-keyframes muter {
+from { -moz-transform: rotate(-360deg) scale(0) ;
+	}
+to { -moz-transform: rotate(0deg) scale(1); }
+}
+@-o-keyframes muter {
+from { -o-transform: rotate(-360deg) scale(0); }
+to { -o-transform: rotate(0deg) scale(1); }
+}
+
+
+@-webkit-keyframes smallBig {
+from { -webkit-transform: scale(3); }
+to { -webkit-transform:  scale(1) ; }
+}
+@-moz-keyframes smallBig {
+from { -moz-transform: scale(10) ;
+	}
+to { -moz-transform: scale(1); }
+}
+@-o-keyframes smallBig {
+from { -o-transform:  scale(3); }
+to { -o-transform: scale(1); }
+}
+
+
+@-webkit-keyframes opacityEfx {
+from { opacity:0; }
+to { opacity:1 ; }
+}
+@-moz-keyframes opacityEfx {
+from { opacity:0; }
+to { opacity:1 ; }
+}
+@-o-keyframes opacityEfx {
+from { opacity:0; }
+to { opacity:1 ; }
+}
+
+@-webkit-keyframes fromLeft {
+from {opacity:0 ;
+	left:-100%;
+	}
+to { opacity:1; left:0; }
+}
+@-moz-keyframes fromLeft {
+from {opacity:0 ;
+	left:-100%;
+	}
+to { opacity:1; left:0; }
+}
+@-o-keyframes fromLeft {
+from {opacity:0 ;
+	left:-100%;
+	}
+to { opacity:1; left:0; }
+}
+
+@-webkit-keyframes fromRight {
+from {opacity:0 ;
+	right:-100%;
+	}
+to { opacity:1; right:0; }
+}
+@-moz-keyframes fromRight {
+from {opacity:0 ;
+	right:-100%;
+	}
+to { opacity:1; right:0; }
+}
+@-o-keyframes fromRight {
+from {opacity:0 ;
+	right:-100%;
+	}
+to { opacity:1; right:0; }
+}
+.rotate {
+	-webkit-animation: muter 2s 1 ease;
+	-moz-animation: muter 2s 1 ease;
+	-o-animation: muter 2s 1 ease;
+}
+.rotates {
+	-moz-animation:spinoffPulse 42s infinite linear;
+	-webkit-animation:spinoffPulse 42s infinite linear;
+	opacity:.5;
+}
+.rotates2 {
+	-moz-animation:spinPulse 52s infinite linear;
+	-webkit-animation:spinPulse 52s infinite linear;
+	right:0;
+	opacity:.9;
+	top:-200px;
+}
+.rotates3 {
+	-moz-animation:spinoffPulse 42s infinite linear;
+	-webkit-animation:spinoffPulse 42s infinite linear;
+	opacity:.5;
+	bottom:0;
+	right:0;
+}
+.rotates4 {
+	-moz-animation:spinPulse 52s infinite linear;
+	-webkit-animation:spinPulse 52s infinite linear;
+	opacity:.7;
+	bottom:0;
+	left:0;
+}
+.circle,.circle1,.circle2,.circle3,.circle4,.circle5 {
+	background-color: #8cd3ff;
+	opacity:.3;
+	border-radius:150px;
+	box-shadow: 0 0 15px #2187e7, 0 0 35px #11406c inset; 
+	width:70px;
+	height:70px;
+	margin:0 auto;
+	position:absolute;
+	top:450px;
+	left:550px;
+}
+.circle1{
+	width:300px;
+	height:300px;
+	border-radius:300px;
+	left:600px;
+	top:0px;
+}
+.circle2{
+	width:200px;
+	height:200px;
+	border-radius:200px;
+	left:300px;
+	top:0px;
+}
+.circle3{
+	width:250px;
+	height:250px;
+	border-radius:250px;
+	left:300px;
+	top:150px;
+}
+.circle4{
+	width:100px;
+	height:100px;
+	border-radius:100px;
+	left:200px;
+	top:300px;
+}
+.rotatefade{
+	-webkit-animation:muter 1s 1 ease;
+	-moz-animation:muter 1s 1 ease;
+	-o-animation:muter 1s 1 ease;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+}
+.zoom {
+	-webkit-animation:resize 1s 1 ease-in-out;
+	-moz-animation: resize 1s 1 ease-in-out;
+	-o-animation: resize 1s 1 ease-in-out;
+}
+.zoomin {
+	-webkit-animation: smallBig 1s 1 ease;
+	-moz-animation: smallBig 1s 1 ease;
+	-o-animation: smallBig 1s 1 ease;
+}
+.fadein {
+	-webkit-animation:opacityEfx 2s 1 ease;
+	-moz-animation:opacityEfx 2s 1 ease;
+	-o-animation:opacityEfx 2s 1 ease;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	opacity:0;
+}
+.fromLeft{
+	-webkit-animation:fromLeft  0.8s 1 ease;
+	-moz-animation:fromLeft 0.8s 1 ease;
+	-o-animation:fromLeft 0.8s 1 ease;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	opacity:0;
+}
+.fromRight{
+	-webkit-animation:fromRight  0.8s 1 ease;
+	-moz-animation:fromRight 0.8s 1 ease;
+	-o-animation:fromRight 0.8s 1 ease;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	opacity:0;
+}
+.delay{
+	animation-delay:1s;
+	-moz-animation-delay:1s; /* Firefox */
+	-webkit-animation-delay:1s; /*Safari and Chrome */ 
+}
+.delay1s{
+	animation-delay:0.5s;
+	-moz-animation-delay:0.5s; /* Firefox */
+	-webkit-animation-delay:0.5s; /*Safari and Chrome */ 
+}
+.delay2s{
+	animation-delay:2s;
+	-moz-animation-delay:2s; /* Firefox */
+	-webkit-animation-delay:2s; /*Safari and Chrome */ 
+}
+.delay3s{
+	animation-delay:3s;
+	-moz-animation-delay:3s; /* Firefox */
+	-webkit-animation-delay:3s; /*Safari and Chrome */ 
+}
+.delay4s{
+	animation-delay:4s;
+	-moz-animation-delay:4s; /* Firefox */
+	-webkit-animation-delay:4s; /*Safari and Chrome */ 
+}
+.delay5s{
+	animation-delay:5s;
+	-moz-animation-delay:5s; /* Firefox */
+	-webkit-animation-delay:4s5s /*Safari and Chrome */ 
+}

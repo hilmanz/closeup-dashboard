@@ -1,0 +1,223 @@
+<script language="javascript" type="text/javascript">
+var fbURL = {$fbURL};
+var indexURL = 0;
+var facebookInterval;
+{literal}
+var newwindow;
+//if (indexURL == 0){
+//	newwindow=window.open(fbURL[indexURL],'name','height=1024,width=960');
+//	if (window.focus) {newwindow.focus()}
+//	setTimeout("newwindow.close();", 90000);
+//}
+
+//facebookInterval = setInterval(rotateFB, 30000);
+
+//function rotateFB(){
+//	indexURL++;
+//	if (indexURL == fbURL.length){
+//		clearInterval(facebookInterval);
+//	}else{
+//		newwindow=window.open(fbURL[indexURL],'name','height=1024,width=960');
+//		if (window.focus) {newwindow.focus()}
+//		setTimeout("newwindow.close();", 90000);
+//	}
+			
+//}
+<!--
+// popup facebook start
+
+function closeWindow(){ setTimeout("newwindow.close();", 90000);}
+
+function popitup(url) {
+	window.focus();
+	newwindow=window.open(url,'name','height=1024,width=960');
+	if (window.focus) {newwindow.focus()}
+	closeWindow();
+	return false;
+}
+$("a.tesppop").live("click", function(){
+	url = ""+$(this).attr('href')+"";
+	popitup(url.substring(1));
+});
+
+// -->
+</script>
+{/literal}
+<div class="half">
+    <div id="contentLeft" class="fromRight">
+        <a class="logo" href="index.html">&nbsp;</a>
+        <div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry" style="width:80%; left:8%;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <div id="listFacebook">
+						<span class="clearBlock"><a class="facebooks" style="float: none;margin: 0 auto;"><img src="images/facebooks.png" /></a></span>
+						<span><a id="CloseUp" href="#" class="facebooks flag current"><img src="images/closeup.png" /><span class="title">CLOSEUP</span></a></span>
+                        <span><a id="FMCG" href="#" class="cart flag"><img src="images/cart.png" /><span class="title">FMCG</span></a></span>
+                        <span><a id="Technology" href="#" class="gear flag"><img src="images/gear.png" /><span class="title">Technology</span></a></span>
+                        <span><a id="Music" href="#" class="guitar flag"><img src="images/guitar.png" /><span class="title">Music</span></a></span>
+                        <span class="clearBlock"><a id="Sports" href="#" class="soccer flag"><img src="images/soccer.png" /><span class="title">SPORTS</span></a></span>
+                    </div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+    <div id="contentRight" class="fromRight delay">
+        <div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+     	{include file="closeup/menu.html"}
+        <div class="entry">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                    <h1>TOP FACEBOOK PAGES</h1>
+					<div id="fbCategory" style="height:275px;">
+						<h2 class="{$top10VFBFans[0].category}">{$top10VFBFans[0].category}</h2>
+						<div class="tall twit_container">	
+							<ol class="twit_update">
+								{section name=i loop=$top10VFBFans}
+								<li><div class="thumbs"><img src="images/thumb_facebook.jpg" /></div><div class="caption"><a href="#{$top10VFBFans[i].fb_url}" class="tesppop">{$top10VFBFans[i].pages}</a></div></li>
+								{/section}
+							</ol>
+						</div>
+					</div>
+                </td>
+              </tr>
+            </table>
+        </div><!-- end #entry -->
+    </div><!-- end #contentRight -->
+</div><!-- end .half -->
+
+<script type="text/javascript">
+	var categoryN="";
+	var interval;
+	var mainInterval;
+	var category = {$fbCategory};
+	var jmlData = {$sizeoffbCategory}
+	var data;
+	var index = 1;
+	var hideTwit;
+{literal}		
+	$(document).ready(function(){	
+		$("#listFacebook a.flag").click(function(){
+			clearInterval(mainInterval);
+			clearInterval(interval);
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$(this).addClass("current");
+			categoryN = $(this).attr('id');
+			var url = "index.php?page=facebook&act=category&category="+categoryN+"";
+			
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#fbCategory").fadeOut();
+				},
+				success: function(response) {
+					var html = trending(categoryN, response);
+					$("#fbCategory").html(html);
+					$("#fbCategory").fadeIn();
+				}
+			});
+			
+			for(var x in category){
+				if (category[x] == categoryN){
+					index = x;
+				}
+			}
+			interval = setInterval(fbLoop, 5000);
+			mainInterval = setInterval(fbRotation, 15000);
+		});
+			
+		interval = setInterval(fbLoop, 5000);
+		mainInterval = setInterval(fbRotation, 15000);
+		
+		function fbRotation(){
+			clearInterval(interval);
+			$("ol").css({top: '0'});
+			$(".flag").each(function(){
+				$(this).removeClass("current");
+			})
+			$("#"+category[index]+"").addClass("current");
+			var url = "index.php?page=facebook&act=category&category="+category[index]+"";
+			$.ajax({
+				type:'POST',
+				url: url,
+				dataType: 'json',
+				beforeSend: function(){
+					$("#fbCategory").hide();
+				},
+				success: function(response) {
+					var html = trending(category[index], response);
+					$("#fbCategory").html(html);
+					$("#fbCategory").fadeIn();
+					
+					interval = setInterval(fbLoop, 5000);
+				}
+			});
+		};
+		
+		
+		function fbLoop(){
+			var totalShowTwit = parseInt($("li").length);
+			var lastTwit = totalShowTwit;
+			console.log(totalShowTwit);
+			if(totalShowTwit >= 4){
+				hideTwit = totalShowTwit - 4;
+			}
+			var twit_update = "index.php?page=facebook&act=loop&fb="+lastTwit+"";
+			
+			$.ajax({
+			type:'POST',
+			url: twit_update,
+			dataType: 'json',
+			beforeSend: function(){
+				
+			},
+			
+			success: function(response) {
+					if (response == false && totalShowTwit < 4){
+						//no data available
+					}else if (response == false && totalShowTwit >= 4){
+						
+					}else{
+						if (hideTwit >= 0){
+							$("ol").prepend('<li style="display: none;"><div class="thumbs"><img src="images/thumb_facebook.jpg" /></div><div class="caption"><a href="#'+response.fb_url+'" class="tesppop">'+response.pages+'</a></li></div>');
+							$('li:eq(0)').slideDown('slow');
+							$('li:eq(4)').fadeOut('slow');
+						}
+					}
+				}
+			});
+		}
+		
+		function trending(country, data){
+			var str='<h2 class="'+country+'">'+country+'</h2>';
+			str+='<div class="tall twit_container">';
+			str+='<ol class="twit_update">';
+			if (data !== null){
+				for(var x in data){
+					str+='<li><div class="thumbs"><img src="images/thumb_facebook.jpg" /></div><div class="caption"><a href="#'+data[x].fb_url+'" class="tesppop">'+data[x].pages+'</a></div></li>';
+				}
+			}else{
+					str+='<span>Not Avalable</span>';
+			}
+			str+='</ol>';
+			str+='</div>';
+			if (index == (jmlData-1)){
+				index = 0
+			}else{
+				index++;
+			}
+			return str;
+		}
+		
+	});
+</script>
+{/literal}

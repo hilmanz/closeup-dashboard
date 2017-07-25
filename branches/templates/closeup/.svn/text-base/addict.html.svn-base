@@ -1,0 +1,52 @@
+<div class="half">
+    <div id="contentLeft" class="fromLeft">
+        <a class="logo" href="index.php">&nbsp;</a>
+        <div class="imgHolder bgred"><img src="images/bgred.png"/></div>
+        <div class="entry">
+            
+        </div><!-- end #entry -->
+    </div><!-- end #contentLeft -->
+</div><!-- end .half -->
+<div class="half last">
+    <div id="contentRight" class="fromRight delay">
+        <div class="imgHolder bgblue"><img src="images/bgblue.png" /></div>
+     	{include file="closeup/menu.html"}
+        <div class="entry">
+            
+        </div><!-- end #entry -->
+    </div><!-- end #contentRight -->
+</div><!-- end .half -->
+
+<div id="popupAddict" class="popupContainer">
+	<div id="popupContent">
+		<a class="closePopup" href="#">&nbsp;</a>
+		<div class="poupContent">
+		  <iframe id="addictFrame" src="http://addictomatic.com/topic/toothpaste"></iframe> 
+		</div><!-- end .poupContent -->
+	</div><!-- end #poupContent -->
+</div><!-- end .popupContainer -->
+<script>
+{literal}
+	$(document).ready(function(){
+			var topic = ['closeup', 'technology', 'Music', 'FMCG', 'Sports', 'toothpaste']; 
+			var addictIndex = 0;
+			var rotationTopic;
+			
+			$("#popupAddict").fadeIn();
+			$("#bgPopup").fadeIn();
+			
+			clearInterval(rotationTopic);
+			rotationTopic = setInterval(addictRotation, 30000);
+		
+			function addictRotation(){
+				$("#popupAddict iframe").attr('src', "http://addictomatic.com/topic/"+topic[addictIndex]);
+				
+				if(topic.length == (addictIndex+1)){
+					addictIndex = 0;
+				}else{
+					addictIndex++;
+				}	
+			}
+	});
+{/literal}
+</script>

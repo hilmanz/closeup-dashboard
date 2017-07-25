@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CLOSE UP</title>
+<meta charset="utf-8" />
+<meta name = "viewport" content = "width=device-width, maximum-scale = 1, minimum-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/closeup.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/animation.css" media="all" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+</head>
+<body>
+	
+    <div id="login">
+        <a class="logo" href="index.html">&nbsp;</a>
+    	<div class="bgblue imgHolder"><img src="images/bgblue.png" /></div>
+				{if $login_error}
+				<script>
+					alert("The username or password you entered is incorrect.");
+				</script>
+				{/if}
+				<form action="login.php" class="login-form" method="post" enctype="application/x-www-form-urlencoded">
+					<div class="row"><input name="username" id="username" type="text" value="Email" /></div>
+					<div class="row"><input name="password" id="password" type="password" value="" /></div>
+					<input name="login" id="login" type="hidden" value="1" />
+					<div class="row"><input type="submit" value="LOGIN" class="btn-login" /></div>
+				</form>
+				{literal}
+				<script language="javascript" type="text/javascript">
+					$("input#username").focus(function(){
+						$(this).val("");
+					});
+				</script>
+				{/literal}
+    </div>
+</body>
+</html>
